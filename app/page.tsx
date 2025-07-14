@@ -2,9 +2,24 @@
 
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { HomePage } from '@/components/canvas/Section'
+import { Earth } from "@/components/canvas/Earth";
+import { Stars} from "@react-three/drei";
+import { Planes } from "@/components/models/Planes";
 
-const Avatar = dynamic(() => import('@/components/canvas/Avatar').then(mod => mod.Avatar), { ssr: false })
+import type { Coord } from "@/helpers/components/Types";
+//TODO: Make list external
+//TODO: Switch from countries to cities
+const coords: Coord[] = [
+  { lat: 51.525437, lng: -0.127108, hash: '#england-londa'},
+  { lat: -2.44314, lng: 133.139, hash: '#indonesia' },
+  { lat: -16.489689, lng: -68.119293, hash: '#bolivia-lapaz' },
+  { lat: 4.7110, lng: -74.0721, hash: '#colombia-bogota' },
+  { lat: -12.0467, lng: -77.0431, hash: '#peru-lima' },
+  { lat: 34.0181, lng: -5.0078, hash: '#morocco-fes' },
+  { lat: 31.5085, lng: -9.7595, hash: '#morocco-essaouira' },
+  { lat: 31.6225, lng: -7.9898, hash: '#morocco-marrakech' }
+]
+
 const View = dynamic(() => import('@/components/canvas/View').then((mod) => mod.View), {
   ssr: false,
   loading: () => (
@@ -34,17 +49,15 @@ export default function Page() {
         </div>
 
         <div className='size-full text-center md:w-3/5'>
-          <View className='flex size-full flex-col items-center justify-center'>
+          <View orbit className='flex size-full flex-col items-center justify-center'>
             <Suspense fallback={null}>
-              <Avatar scale={1} position={[0, -1, 0]} />
-              <Common />
+              <Earth coords={coords}/>
+              <Planes scale={0.1} position={[0,1.25,0]}/>
+              <Stars />
+              <Common color="black"/>
             </Suspense>
           </View>
         </div>
-      </div>
-
-      <div className='flex h-screen w-screen flex-col flex-wrap items-center md:flex-row'>
-        <HomePage />
       </div>
     </>
   )
