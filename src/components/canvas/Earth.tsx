@@ -1,4 +1,4 @@
-import { Sphere, useTexture } from "@react-three/drei";
+import { Sphere, useTexture, Outlines } from "@react-three/drei";
 import { Color } from "three";
 import { Marker } from "@/components/canvas/Marker";
 import { EarthProps } from "@/helpers/components/Interfaces";
@@ -18,6 +18,7 @@ export function Earth({coords}: EarthProps) {
       })}
       <Sphere args={[radius, 32, 32]}>
         <meshPhongMaterial map={earthColor} bumpMap={earthBump} bumpScale={0.002} specularMap={earthSpecular} specular={new Color()} />
+        <Outlines thickness={1.1} color="black"/>
       </Sphere>
     </group>
   )

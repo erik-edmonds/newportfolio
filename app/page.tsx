@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import { Earth } from "@/components/canvas/Earth";
-import { Stars} from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import { Planes } from "@/components/models/Planes";
 
 import type { Coord } from "@/helpers/components/Types";
@@ -54,7 +54,7 @@ export default function Page() {
               <Earth coords={coords}/>
               <Planes scale={0.1} position={[0,1.25,0]}/>
               <Stars />
-              <Common color="black"/>
+              <Common color="#01234e"/>
             </Suspense>
           </View>
         </div>
