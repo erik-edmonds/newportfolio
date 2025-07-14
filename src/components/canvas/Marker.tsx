@@ -3,6 +3,7 @@ import { useSpring, animated } from "@react-spring/three";
 import { Sphere } from "@react-three/drei";
 import { useState } from "react";
 
+//TODO: Update pin with more complex shape
 const Planet = { Sphere: animated(Sphere) };
 
 function placeObject(lat: number, lng: number, radius: number): Record<'position' | 'rotation', [number, number, number]> {
@@ -20,7 +21,7 @@ function placeObject(lat: number, lng: number, radius: number): Record<'position
 
 export function Marker({ coord, radius }: MarkerProps ) {
   const [isHovered, setHovered] = useState(false);
-  const springProps = useSpring({ scale: isHovered ? 4:2})
+  const springProps = useSpring({ scale: isHovered ? 3:1.5})
   const { rotation, position } = placeObject(coord.lat, coord.lng, radius );
 
   return (

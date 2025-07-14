@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/canvas/Earth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Earth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Marker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Marker.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="npm.Next.js: server-side">
+  <component name="RunManager" selected="JavaScript Debug.Next.js: debug client-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -74,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752426534118</updated>
-      <workItem from="1752426535330" duration="25369000" />
+      <workItem from="1752426535330" duration="37714000" />
     </task>
     <servers />
   </component>

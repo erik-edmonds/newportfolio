@@ -5,14 +5,14 @@ import { EarthProps } from "@/helpers/components/Interfaces";
 
 export function Earth({coords}: EarthProps) {
   const [earthColor, earthBump, earthSpecular] = useTexture([
-    "/models/textures/earth-color.jpg",
+    "/models/textures/earth-borderless.png",
     "/models/textures/earth-bump.jpg",
     "/models/textures/earth-specular.png",
   ]);
   const radius = 1;
 
   return (
-    <group rotation={[0, 3.5, 0]}>
+    <group rotation={[0, 0, 0]}>
       {coords.map((coord) => {
         return <Marker key={coord.hash} coord={coord} radius={radius} />;
       })}
