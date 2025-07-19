@@ -15,5 +15,15 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    transition-property: opacity, background, transform, filter;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+  }
+
+  .transition {
+    opacity: 0;
+    background: #a8a8ad;
+    transform: translateY(40px);
+    filter: blur(12px);
   }
 }

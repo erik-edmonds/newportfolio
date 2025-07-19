@@ -34,7 +34,7 @@ export function Marker({ coord, radius }: MarkerProps ) {
       onPointerLeave={() => {setHovered(false); document.body.style.cursor = 'default';}}
       scale={springProps.scale}
     >
-      <meshBasicMaterial color={0xff8e38} />
+      <meshBasicMaterial color={0xa8a8ad} />
     </Planet.Sphere>
   )
 }

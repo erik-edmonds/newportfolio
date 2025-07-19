@@ -109,7 +109,7 @@ export default function Page() {
         {/* jumbo */}
         <div className='flex w-full flex-col items-start justify-center p-12 text-center md:w-2/5 md:text-left'>
           <h1 className='my-4 text-5xl font-bold leading-tight'>Hi!</h1>
-          <p className='mb-8 text-xl leading-normal'>My name is Erik Edmonds, and I'm a huge traveler! Track where I am.</p>
+          <p className='mb-8 text-xl leading-normal'>My name is Erik Edmonds, and I'm a huge traveler! Track where I am. (Spin the globe!)</p>
         </div>
 
         <div className='size-full text-center md:w-3/5'>

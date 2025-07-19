@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.0.0",
+    "@pmndrs/assets": "^1.7.0",
     "@react-spring/three": "^10.0.1",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.12",
+    "d3": "^7.9.0",
     "fs": "^0.0.1-security",
     "glsl-random": "^0.0.5",
     "next": "^14.0.4",
@@ -21,7 +23,8 @@
     "react-dom": "^18.2.0",
     "three": "^0.160.0",
     "three-stdlib": "^2.28.9",
-    "tunnel-rat": "^0.1.2"
+    "tunnel-rat": "^0.1.2",
+    "wouter": "^3.7.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.0.4",
