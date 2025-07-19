@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function ErrorModel(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('models/404.glb')
+  const { nodes, materials, animations } = useGLTF('/models/404.glb')
   animations[0].name = 'Error'
   const { actions } = useAnimations(animations, group)
 

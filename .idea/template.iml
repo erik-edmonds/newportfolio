@@ -8,6 +8,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="EnterPortals" />
+    <orderEntry type="module" module-name="react-time-based-rendering" />
   </component>
 </module>

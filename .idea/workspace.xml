@@ -5,18 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2c8c9d-7016-46b6-8fbf-637f633a6a4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../codesandbox/EnterPortals/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../codesandbox/EnterPortals/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../codesandbox/EnterPortals/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../codesandbox/EnterPortals/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/asteroid.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/astronaut.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/moon.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/plane.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/satellite.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/models/sun.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/models/Astronaut.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/models/Fighter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/models/Moon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/models/Satellite.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/models/Sun.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/components/Effects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/Avatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/Marker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Marker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/View.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/View.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dog.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/duck.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/models/fighter.glb" beforeDir="false" afterPath="$PROJECT_DIR$/public/models/fighter.glb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Clouds.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/Asteroid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Earth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Scene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Scene.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dom/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dom/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/models/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/404.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/models/Clouds.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/models/Earth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/Earth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/models/Planes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/Planes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +106,8 @@
       <updated>1752426534118</updated>
       <workItem from="1752426535330" duration="74140000" />
       <workItem from="1752765784659" duration="1559000" />
-      <workItem from="1752768096284" duration="25390000" />
+      <workItem from="1752768096284" duration="36515000" />
+      <workItem from="1752953126237" duration="5960000" />
     </task>
     <servers />
   </component>

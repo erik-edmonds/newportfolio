@@ -2,10 +2,21 @@
 
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import { Earth } from "@/components/canvas/Earth";
+
+//Homepage Scene
+import { Earth } from "@/components/models/Earth";
 import { Stars } from "@react-three/drei";
+import { Sun } from "@/components/models/Sun";
 import { Planes } from "@/components/models/Planes";
+import { Astronaut } from "@/components/models/Astronaut";
+import { OrbitingAstronaut } from "@/components/models/OrbitingAstronaut";
+import { Satellite } from "@/components/models/Satellite";
+import { Moon } from "@/components/models/Moon";
+import { Fighter } from "@/components/models/Fighter";
+
 import type { Coord } from "@/helpers/components/Types";
+import {ToneMappingMode} from "postprocessing";
+
 //TODO: Make list external
 //TODO: Switch from countries to cities
 const coords: Coord[] = [
@@ -109,7 +120,7 @@ export default function Page() {
         {/* jumbo */}
         <div className='flex w-full flex-col items-start justify-center p-12 text-center md:w-2/5 md:text-left'>
           <h1 className='my-4 text-5xl font-bold leading-tight'>Hi!</h1>
-          <p className='mb-8 text-xl leading-normal'>My name is Erik Edmonds, and I'm a huge traveler! Track where I am. (Spin the globe!)</p>
+          <p className='mb-8 text-xl leading-normal'>I'm Erik Edmonds, a data scientist and digital nomad! Track where I am. (Spin the globe!)</p>
         </div>
 
         <div className='size-full text-center md:w-3/5'>
@@ -117,7 +128,13 @@ export default function Page() {
             <Suspense fallback={null}>
               <Earth coords={coords}/>
               <Planes scale={0.1} position={[0,1.25,0]}/>
+              <Astronaut scale={0.1} position={[-1.5,0,0]} rotation-y={Math.PI/2}/>
+              <Satellite position={[-1.5,0,0]} rotation-y={Math.PI/4}/>
+              <Moon position={[3,3,-5]}/>
+              <Sun position={[-3,3,-5]}/>
+              <OrbitingAstronaut scale={0.1} position={[2,3,-5]} rotation-y={Math.PI/2}/>
               <Stars />
+              <Fighter scale={0.1}/>
               <Common color="#01234e"/>
             </Suspense>
           </View>

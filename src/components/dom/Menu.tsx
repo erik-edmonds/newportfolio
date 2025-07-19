@@ -20,6 +20,7 @@ export const Menu = (props) => {
         <div className="flex-1 flex items-center justify-center flex-col gap-6 p-8">
           {/* TODO: Fix click function onClick={() => alert("Projects")}*/}
           <MenuButton label="Home" route="/" onClick={() => setMenuOpened(!menuOpened)}/>
+          <MenuButton label="About" route="about" onClick={() => setMenuOpened(!menuOpened)} />
           <MenuButton label="Projects" route="projects" onClick={() => setMenuOpened(!menuOpened)} />
           <MenuButton label="Contact" route="contact" onClick={() => setMenuOpened(!menuOpened)} />
         </div>
@@ -32,7 +33,7 @@ const MenuButton = (props: any) => {
   const { label, route, onClick } = props;
   return (
     <button onClick={onClick} className="text-2xl font-bold cursor-pointer hover:text-[#a8a8ad] transition-colors">
-      <TransitionLink href={route}>{label}</TransitionLink>
+      <TransitionLink href={`/${route}`}>{label}</TransitionLink>
     </button>
   )
 }

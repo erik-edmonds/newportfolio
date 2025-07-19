@@ -2,21 +2,33 @@
 # TODO:
 - Priority 1 (Functionality)
   - Page Transitions FIXED
+  - Switch between moon and sun based on time of day
   - Menu Bar ( Not Closing) FIXED
-  - Vercel Deployment.
+  - Add Bloom to Sun ADDED, BUT NEEDS TO BE CORRECTED
+  - Vercel Deployment
     - Upgrade Node version(?)
-  - Fix 404 routing
+  - Fix 404 routing FIXED
 - Priority 2 (Aesthetics)
   - Change dot color for current location
+  - Fonts
   - Move location list to external file
   - Finish Menu Links
     - Projects
+      - Fix Camera Angle
+      - Change Portal models
+        - 1: Train(?)
+        - 2: 
+        - 3:
     - Contact
+    - About
   - Reintroduce avatar
+    - Standing on top of the world?
+    - Better Idea - Make current location my avatar
   - Add non-linear page transitions
 - Priority 3 (Low Priority Functionality)
-  - Fonts
   - Lighting Positions for Globe
+  - Optimization, reduce memory usage
+  - Find new model for 404 page
 
 - Priority 4 (Future Iterations/Cool to Have)
   - OnClick function for cities show cards
@@ -27,3 +39,6 @@
     - Maybe pictures from that area
     - Link to Wikipedia page of city?
   - Add Spiderverse animations
+  - Fix Data folder
+    - Subfolder for projects
+    - Move data folder from src
