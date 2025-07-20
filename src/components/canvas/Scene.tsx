@@ -6,7 +6,6 @@ import { r3f } from '@/helpers/global'
 import * as THREE from 'three'
 import { useState } from 'react'
 import { Menu } from '@/components/dom/Menu'
-import { EffectComposer, Bloom, LUT, BrightnessContrast, HueSaturation, ToneMapping } from "@react-three/postprocessing"
 
 export default function Scene({ ...props }) {
   const [menuOpened, setMenuOpened] = useState(false)

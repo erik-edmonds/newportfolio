@@ -6,7 +6,7 @@ import { useState } from "react";
 //TODO: Update pin with more complex shape
 const Planet = { Sphere: animated(Sphere) };
 
-function placeObject(lat: number, lng: number, radius: number): Record<'position' | 'rotation', [number, number, number]> {
+function placeObject(lat: number, lng: number, radius: number, current: boolean): Record<'position' | 'rotation', [number, number, number, boolean]> {
   const latRad = lat * (Math.PI / 180);
   const lngRad = -lng * (Math.PI / 180);
 
@@ -19,7 +19,7 @@ function placeObject(lat: number, lng: number, radius: number): Record<'position
   }
 }
 
-export function Marker({ coord, radius }: MarkerProps ) {
+export function Marker({ coord, radius, current }: MarkerProps ) {
   const [isHovered, setHovered] = useState(false);
   const springProps = useSpring({ scale: isHovered ? 3:1.5})
   const { rotation, position } = placeObject(coord.lat, coord.lng, radius );
@@ -34,7 +34,7 @@ export function Marker({ coord, radius }: MarkerProps ) {
       onPointerLeave={() => {setHovered(false); document.body.style.cursor = 'default';}}
       scale={springProps.scale}
     >
-      <meshBasicMaterial color={0xa8a8ad} />
+      <meshBasicMaterial color={current? 0xfa362f: 0xd7d7de } />
     </Planet.Sphere>
   )
 }

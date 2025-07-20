@@ -7,7 +7,7 @@ export const Menu = (props) => {
     <>
       <button
         onClick={() => setMenuOpened(!menuOpened)}
-        className="z-20 fixed top-12 right-12 p-3 bg-[#a8a8ad] w-11 h-11 rounded-2xl">
+        className="z-20 fixed top-12 right-12 p-3 bg-[#929296] w-11 h-11 rounded-2xl">
         <div className={`bg-white h-0.5 rounded-md w-full transition-all
           ${menuOpened ? "rotate-45 translate-y-0.5" : ""}`}/>
         <div className={`bg-white h-0.5 rounded-md w-full my-1
@@ -32,7 +32,7 @@ export const Menu = (props) => {
 const MenuButton = (props: any) => {
   const { label, route, onClick } = props;
   return (
-    <button onClick={onClick} className="text-2xl font-bold cursor-pointer hover:text-[#a8a8ad] transition-colors">
+    <button onClick={onClick} className="text-2xl font-bold cursor-pointer hover:text-[#929296] transition-colors">
       <TransitionLink href={`/${route}`}>{label}</TransitionLink>
     </button>
   )

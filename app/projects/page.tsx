@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react';
-import { Gltf } from "@react-three/drei";
+import { Gltf, MeshReflectorMaterial } from "@react-three/drei";
 
 const View = dynamic(() => import('@/components/canvas/View').then((mod) => mod.View), {
   ssr: false,
@@ -25,23 +25,54 @@ const Rig = dynamic(() => import('@/components/canvas/Frame').then((mod) => mod.
 export default function Page() {
   return (
     <>
-      <div className=' flex h-screen w-screen flex-col flex-wrap items-center md:flex-row bg-[#f6efe5]'>
+      <div className=' flex h-screen w-screen flex-col flex-wrap items-center md:flex-row '>
         <View orbit className='flex size-full flex-col items-center justify-center'>
           <Suspense fallback={null}>
-            <Frame id="01" name={`pick\nles`} bg="#e4cdac" position={[-1.15, 0, 0]} rotation={[0, 0.5, 0]}>
-              <Gltf src="models/pickles_3d_version_of_hyuna_lees_illustration-transformed.glb" scale={8} position={[0, -0.7, -2]} />
-            </Frame>
-            <Frame id="02" name="tea">
-              <Gltf src="models/fiesta_tea-transformed.glb" position={[0, -2, -3]} />
-            </Frame>
-            <Frame id="03" name="still"  bg="#d1d1ca" position={[1.15, 0, 0]} rotation={[0, -0.5, 0]}>
-              <Gltf src="models/still_life_based_on_heathers_artwork-transformed.glb" scale={2} position={[0, -0.8, -4]} />
-            </Frame>
+            <Frames />
+            <mesh position={[0,-1.5,0]} rotation={[-Math.PI / 2, 0, 0]}>
+              <planeGeometry args={[50, 50]} />
+              <MeshReflectorMaterial
+                blur={[100, 100]}
+                resolution={2048}
+                mixBlur={1}
+                mixStrength={100}
+                roughness={0.5}
+                depthScale={1.2}
+                minDepthThreshold={0.4}
+                maxDepthThreshold={1.4}
+                color="#49484a"
+                metalness={0.1}
+              />
+            </mesh>
+            <fog attach="fog" args={['#130136', 2, 10]} />
             <Rig />
-            <Common color="#f6efe5" position={[0,0,100]}/>
+            <Common color="#130136" position={[0,0,0]}/>
           </Suspense>
         </View>
       </div>
+
+    </>
+  )
+}
+
+const Frames = () => {
+  return (
+    <>
+      <Frame id="cv" name="trains"  bg="#d1d1ca" position={[-3.5, 0, -5]} rotation={[0, 0.5, 0]} scale={1.5}>
+        <Gltf src="models/still_life_based_on_heathers_artwork-transformed.glb" scale={2} position={[0, -0.8, -4]} />
+      </Frame>
+      <Frame id="visualization" name="election" bg="#e4cdac" position={[-1.75,0,-5]} rotation={[0, 0.25, 0]} scale={1.5}>
+        <Gltf src="models/pickles_3d_version_of_hyuna_lees_illustration-transformed.glb" scale={8} position={[0, -0.7, -2]} />
+      </Frame>
+      <Frame id="work" name="nft" position={[0,0,-5]} scale={1.5}>
+        <Gltf src="models/fiesta_tea-transformed.glb" position={[0, -2, -5]} />
+      </Frame>
+      <Frame id="education" name={`gaussian\nsplatting`}  bg="#d1d1ca" position={[1.75, 0, -5]} rotation={[0, -0.25, 0]} scale={1.5}>
+        <Gltf src="models/still_life_based_on_heathers_artwork-transformed.glb" scale={2} position={[0, -0.8, -4]} />
+      </Frame>
+      <Frame id="modeling" name="spiderverse" bg="#e4cdac" position={[3.5,0,-5]} rotation={[0, -0.5, 0]} scale={1.5}>
+        <Gltf src="models/pickles_3d_version_of_hyuna_lees_illustration-transformed.glb" scale={8} position={[0, -0.7, -2]} />
+      </Frame>
     </>
   )
 }

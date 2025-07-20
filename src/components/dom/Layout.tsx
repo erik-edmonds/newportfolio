@@ -7,6 +7,7 @@ const Scene = dynamic(() => import('@/components/canvas/Scene'), { ssr: false })
 const Layout = ({ children }) => {
   const ref = useRef()
 
+
   return (
     <div
       ref={ref}
@@ -16,8 +17,7 @@ const Layout = ({ children }) => {
         height: '100%',
         overflow: 'auto',
         touchAction: 'auto',
-      }}
-    >
+      }}>
       {children}
       <Scene
         style={{
@@ -29,8 +29,8 @@ const Layout = ({ children }) => {
           pointerEvents: 'none',
         }}
         eventSource={ref}
-        eventPrefix='client'
-      />
+        eventPrefix='client'/>
+
     </div>
   )
 }

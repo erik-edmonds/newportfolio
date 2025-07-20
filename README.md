@@ -1,21 +1,23 @@
 # Portfolio
 # TODO:
 - Priority 1 (Functionality)
-  - Page Transitions FIXED
+  - Page Transitions DONE
   - Switch between moon and sun based on time of day
-  - Menu Bar ( Not Closing) FIXED
-  - Add Bloom to Sun ADDED, BUT NEEDS TO BE CORRECTED
-  - Vercel Deployment
+  - Menu Bar ( Not Closing) DONE
+  - Add Bloom to Sun DONE, BUT NEEDS TO BE CORRECTED
+  - Loading page
+  - Vercel Deployment -- HIGH PRIORITY
     - Upgrade Node version(?)
-  - Fix 404 routing FIXED
+  - Fix 404 routing DONE
 - Priority 2 (Aesthetics)
-  - Change dot color for current location
+  - Change dot color for current location DONE
+  - Logo for Home
   - Fonts
   - Move location list to external file
   - Finish Menu Links
     - Projects
-      - Fix Camera Angle
-      - Change Portal models
+      - Fix Camera Angle DONE
+      - Change Portal models - 5?
         - 1: Train(?)
         - 2: 
         - 3:
@@ -39,6 +41,6 @@
     - Maybe pictures from that area
     - Link to Wikipedia page of city?
   - Add Spiderverse animations
-  - Fix Data folder
+  - Fix Data folder DONE
     - Subfolder for projects
     - Move data folder from src

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export const useTimeBasedRendering = (incomingStartDate: Date, incomingEndDate: Date) => {
+export const TimeRenderer = (incomingStartDate: Date, incomingEndDate: Date) => {
   const [startDate, setStartDate] = useState(incomingStartDate)
   const [endDate, setEndDate] = useState(incomingEndDate)
   const [canRender, setCanRender] = useState(false)

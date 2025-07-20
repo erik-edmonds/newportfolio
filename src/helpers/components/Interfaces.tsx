@@ -7,4 +7,5 @@ export interface EarthProps {
 export interface MarkerProps {
   coord: EarthProps['coords'][number];
   radius: number;
+  current: boolean;
 }

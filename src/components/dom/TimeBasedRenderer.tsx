@@ -1,14 +1,20 @@
-import { useTimeBasedRendering } from './hooks/useTimeBasedRendering'
-import { TimeBasedRenderingProps as Props } from '../models/props'
+import { ReactNode} from "react";
+import { TimeRenderer} from "@/helpers/components/TimeRenderer";
 
-export const SunWrapper({ startDate, endDate, children }: Props) => {
-  const canRender = useTimeBasedRendering(startDate, endDate)
+type TimeProps = {
+  children: ReactNode;
+  startDate?: Date;
+  endDate?: Date;
+}
+
+export const SunWrapper({ startDate, endDate, children }: TimeProps) => {
+  const canRender = TimeRenderer(startDate, endDate)
 
   return <div>{canRender && children}</div>
 }
 
-export const MoonWrapper({ startDate, endDate, children }: Props) => {
-  const canRender = useTimeBasedRendering(startDate, endDate)
+export const MoonWrapper({ startDate, endDate, children }: TimeProps) => {
+  const canRender = TimeRenderer(startDate, endDate)
 
   return <div>{!canRender && children}</div>
 }

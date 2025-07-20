@@ -5,39 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2c8c9d-7016-46b6-8fbf-637f633a6a4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/models/asteroid.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/models/astronaut.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/models/moon.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/models/plane.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/models/satellite.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/models/sun.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/models/Astronaut.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/models/Fighter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/models/Moon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/models/Satellite.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/models/Sun.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/components/Effects.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/template.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dog.glb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/duck.glb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/models/fighter.glb" beforeDir="false" afterPath="$PROJECT_DIR$/public/models/fighter.glb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/Clouds.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/Asteroid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/canvas/Earth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2012_and_2016_presidential_election_results_by_county.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/anes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/20201011-nytimes-president.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/20201016-nytimes-president.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/2020_US_County_Level_Presidential_Results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/CVAP_2010-2014_ACS_csv_files/CVAP_10to14_Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/CVAP_2010-2014_ACS_csv_files/County.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/CVAP_2014-2018_ACS_csv_files/CVAP_2014-2018_ACS_Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/CVAP_2014-2018_ACS_csv_files/County.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/CVAP_CSV_Format_2005-2009/CVAP_Documentation_Version2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/CVAP_CSV_Format_2005-2009/County.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/mit_countydata/County Presidential Returns 2000-2016.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/mit_countydata/countypres_2000-2016.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/mit_countydata/leip_natl_data_2020.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/counties/nytimes-20201010-president.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/county_2016.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/county_2020.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cps/gender_race/table04a_2004.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cps/gender_race/table04b_2008.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cps/gender_race/table04b_2012.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cps/gender_race/table04b_2016.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/demographic.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/state_2016.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/state_2020.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/state_converter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/state_electoral_votes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/us-presidential-election-county-results-2004-through-2012.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/zip_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Frame.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Frame.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/canvas/Marker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Marker.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/canvas/Scene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/canvas/Scene.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dom/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dom/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dom/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dom/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/models/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/404.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/models/Clouds.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dom/TimeBasedRenderer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dom/TimeBasedRenderer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/models/Earth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/Earth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/models/Planes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/models/Planes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/locations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/components/Dates.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/components/Interfaces.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/components/Interfaces.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/components/Types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/components/Types.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +120,8 @@
       <workItem from="1752426535330" duration="74140000" />
       <workItem from="1752765784659" duration="1559000" />
       <workItem from="1752768096284" duration="36515000" />
-      <workItem from="1752953126237" duration="5960000" />
+      <workItem from="1752953126237" duration="13270000" />
+      <workItem from="1752967578458" duration="8474000" />
     </task>
     <servers />
   </component>

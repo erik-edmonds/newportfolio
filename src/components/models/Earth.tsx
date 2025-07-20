@@ -14,7 +14,7 @@ export function Earth({coords}: EarthProps) {
   return (
     <group rotation={[0, 0, 0]}>
       {coords.map((coord) => {
-        return <Marker key={coord.hash} coord={coord} radius={radius} />;
+        return <Marker key={coord.hash} coord={coord} radius={radius} current={coord.current}/>;
       })}
       <Sphere args={[radius, 32, 32]}>
         <meshPhongMaterial map={earthColor} bumpMap={earthBump} bumpScale={0.002} specularMap={earthSpecular} specular={new Color()} />
