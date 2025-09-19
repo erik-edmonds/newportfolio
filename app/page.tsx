@@ -68,7 +68,7 @@ const coords: Coord[] = [
   { lat: 31.5085, lng: -9.7595, current: false, hash: '#morocco-essaouira' },
   { lat: 31.6225, lng: -7.9898, current: false, hash: '#morocco-marrakech' },
   //South America
-  { lat: -16.489689, lng: -68.119293, current: true, hash: '#bolivia-lapaz' },
+  { lat: -16.489689, lng: -68.119293, current: false, hash: '#bolivia-lapaz' },
   { lat: 4.7110, lng: -74.0721, current: false, hash: '#colombia-bogota' },
   { lat: -12.0467, lng: -77.0431, current: false, hash: '#peru-lima' },
   { lat: 21.1619, lng: -86.8515, current: false, hash: '#mexico-cancun' },
@@ -81,7 +81,7 @@ const coords: Coord[] = [
   { lat: 21.3099, lng: -157.8581, current: false, hash: '#us-hawaii' },
   { lat: 40.7128, lng: -74.0060, current: false, hash: '#us-nyc' },
   { lat: 42.3555, lng: -71.0565, current: false, hash: '#us-boston' },
-  { lat: 41.8832, lng: -87.6324, current: false, hash: '#us-chicago' },
+  { lat: 41.8832, lng: -87.6324, current: true, hash: '#us-chicago' },
   { lat: 25.7617, lng: -80.1918, current: false, hash: '#us-miami' },
   { lat: 33.7501, lng: -84.3885, current: false, hash: '#us-atlanta' },
   { lat: 32.7767, lng: -96.7970, current: false, hash: '#us-dallas' },
