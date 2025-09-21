@@ -123,7 +123,7 @@ export default function Page() {
         <div className='flex w-full flex-col items-start justify-center p-12 text-center md:w-2/5 md:text-left'>
           <h1 className='my-4 text-5xl font-bold leading-tight'>Hi!</h1>
           <p className='mb-8 text-xl leading-normal tracking-tighter text-[#929296]'>I'm Erik Edmonds, a data scientist
-            and digital nomad! Track where I am -- red dot. (Spin the globe!)</p>
+            and digital nomad! Track where I am -- the cute little avatar. (Spin the globe!)</p>
         </div>
 
         <div className='size-full text-center md:w-3/5'>
